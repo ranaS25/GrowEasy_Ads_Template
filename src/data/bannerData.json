@@ -6,7 +6,7 @@
     "title": "Easy Growth Solutions",
     "description": "Streamline Your Business Processes",
     "CTAtext": "Upgrade Now",
-    "imageSrc": "public/assets/template_1.png",
+    "imageSrc": "/images/image1.png",
     "bannerTemplate": "default"
   },
   {
@@ -14,7 +14,7 @@
     "title": "Boost Your Sales",
     "description": "Increase Your Revenue with Our Tools",
     "CTAtext": "Learn More",
-    "imageSrc": "https://example.com/image2.png",
+    "imageSrc": "/images/image2.png",
     "bannerTemplate": "template_17"
   },
   {
@@ -22,7 +22,7 @@
     "title": "Experience the Future",
     "description": "Discover Innovative Technology",
     "CTAtext": "Explore Now",
-    "imageSrc": "https://example.com/image3.webp",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_32"
   },
   {
@@ -30,7 +30,7 @@
     "title": "Efficient Management",
     "description": "Optimize Your Operations",
     "CTAtext": "Get Started",
-    "imageSrc": "https://example.com/image4.jpg",
+    "imageSrc": "/images/image4.png",
     "bannerTemplate": "template_25"
   },
   {
@@ -38,7 +38,7 @@
     "title": "Innovative Solutions",
     "description": "Revolutionize Your Workflow",
     "CTAtext": "Try Now",
-    "imageSrc": "https://example.com/image5.png",
+    "imageSrc": "/images/image5.png",
     "bannerTemplate": "template_18"
   },
   {
@@ -46,7 +46,7 @@
     "title": "Smart Business Tools",
     "description": "Enhance Productivity",
     "CTAtext": "Discover More",
-    "imageSrc": "https://example.com/image6.webp",
+    "imageSrc": "/images/image6.png",
     "bannerTemplate": "template_33"
   },
   {
@@ -54,7 +54,7 @@
     "title": "Cutting-edge Technology",
     "description": "Stay Ahead of the Curve",
     "CTAtext": "Learn More",
-    "imageSrc": "https://example.com/image7.jpg",
+    "imageSrc": "/images/image2.png",
     "bannerTemplate": "template_26"
   },
   {
@@ -62,7 +62,7 @@
     "title": "Future-proof Your Business",
     "description": "Prepare for Tomorrow",
     "CTAtext": "Upgrade Today",
-    "imageSrc": "https://example.com/image8.png",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_19"
   },
   {
@@ -70,7 +70,7 @@
     "title": "Maximize Efficiency",
     "description": "Get More Done",
     "CTAtext": "Explore Now",
-    "imageSrc": "https://example.com/image9.webp",
+    "imageSrc": "/images/image1.png",
     "bannerTemplate": "template_34"
   },
   {
@@ -78,7 +78,7 @@
     "title": "Advanced Analytics",
     "description": "Make Data-Driven Decisions",
     "CTAtext": "Get Insights",
-    "imageSrc": "https://example.com/image10.jpg",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_27"
   },
   {
@@ -86,7 +86,7 @@
     "title": "Seamless Integration",
     "description": "Unify Your Systems",
     "CTAtext": "Connect Now",
-    "imageSrc": "https://example.com/image11.png",
+    "imageSrc": "/images/image5.png",
     "bannerTemplate": "template_20"
   },
   {
@@ -94,7 +94,7 @@
     "title": "Automate Your Workflow",
     "description": "Save Time and Money",
     "CTAtext": "Start Today",
-    "imageSrc": "https://example.com/image12.webp",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_35"
   },
   {
@@ -102,7 +102,7 @@
     "title": "Next-gen Solutions",
     "description": "Innovate and Excel",
     "CTAtext": "Discover More",
-    "imageSrc": "https://example.com/image13.jpg",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_28"
   },
   {
@@ -110,7 +110,7 @@
     "title": "Transform Your Business",
     "description": "Achieve New Heights",
     "CTAtext": "Join Now",
-    "imageSrc": "https://example.com/image14.png",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_21"
   },
   {
@@ -118,7 +118,7 @@
     "title": "Business Optimization",
     "description": "Streamline Operations",
     "CTAtext": "Get Started",
-    "imageSrc": "https://example.com/image15.webp",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_36"
   },
   {
@@ -126,7 +126,7 @@
     "title": "Scalable Solutions",
     "description": "Grow with Confidence",
     "CTAtext": "Learn More",
-    "imageSrc": "https://example.com/image16.jpg",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_29"
   },
   {
@@ -134,7 +134,7 @@
     "title": "Empower Your Team",
     "description": "Boost Productivity",
     "CTAtext": "Explore Now",
-    "imageSrc": "https://example.com/image17.png",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_22"
   },
   {
@@ -142,7 +142,7 @@
     "title": "Innovate Your Industry",
     "description": "Lead with Technology",
     "CTAtext": "Try Now",
-    "imageSrc": "https://example.com/image18.webp",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_37"
   },
   {
@@ -150,7 +150,7 @@
     "title": "Future-Ready Tools",
     "description": "Stay Competitive",
     "CTAtext": "Upgrade Now",
-    "imageSrc": "https://example.com/image19.jpg",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_30"
   },
   {
@@ -158,7 +158,7 @@
     "title": "Comprehensive Solutions",
     "description": "All-in-One Tools",
     "CTAtext": "Discover More",
-    "imageSrc": "https://example.com/image20.png",
+    "imageSrc": "/images/image3.png",
     "bannerTemplate": "template_23"
   }
 ]

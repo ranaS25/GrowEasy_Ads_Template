@@ -4,10 +4,12 @@ import React from 'react'
 import { connect } from 'react-redux';
 
 interface propsType{
-  details:{title: string;
-  description: string;
-    CTAtext: string;
+  details:{title: string | null;
+  description: string| null;
+    CTAtext: string | null;
+    imageSrc: string| null;
   },
+  displayOnly?: boolean; 
   toggleEditor: (b:boolean) => void;
   
 }
@@ -15,7 +17,9 @@ interface propsType{
 const AdSquare:React.FC<propsType> = (props) => {
   
   // console.log(props.setOpened);
-  const { title, description, CTAtext } = props.details;
+  const { title, description, CTAtext, imageSrc } = props.details;
+  const displayOnly = props.displayOnly;
+
   const dispatch = useAppDispatch();
   
   const handleEditClick = () => { 
@@ -30,17 +34,18 @@ const AdSquare:React.FC<propsType> = (props) => {
 
 
   return <div className='bg-white aspect-square relative'>
-    <img src={"https://media.istockphoto.com/id/1342252269/photo/happy-black-man-using-laptop-working-online-over-blue-background.jpg?s=612x612&w=0&k=20&c=I47l6uUuDklwq_sxNBI3tfbZ4_5Gx_tAY-MBdnEVXJs="}
+    <img src={imageSrc?imageSrc:""}
     className='w-3/5 aspect-square object-cover absolute top-1/2 right-0 transform: -translate-y-[55%]'/>
-    <img src={"/images/square1.png"}
+    <img src={"/templates/square1.png"}
       className='w-full aspect-square absolute top-0' />
     <div className='w-full aspect-square absolute z-10 top-0 text-white'>
       <p>{ title}</p>
       <p>{ description}</p>
       <button>{ CTAtext}</button>
     </div>
-    <img src={"/icons/icon_edit.png"} className='w-12 h-12 absolute z-20 right-0 m-2 bg-black/20'
-      onClick={handleEditClick} />
+    {!displayOnly &&  <img src={"/icons/icon_edit.png"} className='w-12 h-12 absolute z-20 right-0 m-2 bg-black/20'
+      onClick={handleEditClick} />}
+    
   </div>
 }
 

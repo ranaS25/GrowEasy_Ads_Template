@@ -1,12 +1,12 @@
-import React, { MutableRefObject } from 'react'
+import React  from 'react'
 
-export default function FormInput({ title, value, refer }: { title: string, value: string, refer: any }) {
+export default function FormInput({ title, text, changeText }: { title: string, text: string, changeText: (s: string)=>void }) {
 
 
   return (
     <div className="mt-5 ">
       <p className="text-sm">{title}</p>
-      <input ref={ refer} type="text" className='p-2 mt-2 text-sm border border-gray w-full rounded text-black  focus:outline-none' />
+      <input type="text" className='p-2 mt-2 text-sm border border-gray w-full rounded text-black  focus:outline-none' value={text} onChange={(e)=>{changeText(e.target.value)}}/>
     </div>
   )
 }
