@@ -15,6 +15,7 @@ import { addBanners } from '@/lib/features/BannerSlice'
 
 
 import { useAppSelector } from '../lib/hooks'
+import EditBanner from './EditBanner'
 
 
 
@@ -36,6 +37,7 @@ const Body: React.FC = () => {
   return (
     <Provider store={storeRef.current}>
       <Header />
+      
       <AdsContainer />
 
 
