@@ -3,19 +3,50 @@
 
 import FormInput from "./FormInput";
 import { useAppDispatch, useAppSelector, useAppStore } from "@/lib/hooks";
-import { setEditBanner, setEditorOpened } from "@/lib/features/BannerSlice";
+import { setEditBanner, setEditorOpened, updateBanner } from "@/lib/features/BannerSlice";
+import { useEffect, useRef } from "react";
 
 const EditBanner = () => {
 
+  const titleRef:any = useRef(null);
+  const descriptionRef:any = useRef(null);
+  const CTAtextRef:any = useRef(null);
+
   const dispatch = useAppDispatch()
   const details: any = useAppSelector(store => store.banner.editBanner)
+
+  useEffect(() => { 
+    titleRef.current.value = details.title;
+    descriptionRef.current.value = details.description;
+    CTAtextRef.current.value = details.CTAtext;
+
+  }, [])
+
+
 
 
   const handleClose = () => {
     dispatch(setEditorOpened(false))
     dispatch(setEditBanner(null))
   }
+  const handleSave = () => {
+    console.log(titleRef.current?.value);
+    console.log(descriptionRef.current?.value);
+    console.log(CTAtextRef.current?.value);
 
+
+    const newObject = {...details};
+    // tO = { ...sourceObject };
+    newObject.title = titleRef.current?.value;
+    newObject.description = descriptionRef.current?.value;
+    newObject.CTAtext = CTAtextRef.current?.value;
+    dispatch(updateBanner(newObject));
+
+    dispatch(setEditorOpened(false))
+    dispatch(setEditBanner(null))
+
+    
+  }
 
   return (
 
@@ -31,12 +62,15 @@ const EditBanner = () => {
           <div className="px-12"><img className="w-full aspect-square" /></div>
           <p className="mt-4 text-xs">Image Attribution: <i>Photo by <span className="underline">Ceyda Çiftci</span> on <span className="underline">Unsplash</span></i></p>
         </div>
-        <FormInput title={"Title"} value={details.title} />
-        <FormInput title={"Description"} value={details.description} />
-        <FormInput title={"Button Text"} value={details.CTAtext} />
+        <FormInput refer={ titleRef}
+          title={"Title"} value={details.title} />
+        <FormInput refer={descriptionRef}
+          title={"Description"} value={details.description} />
+        <FormInput refer={CTAtextRef}
+          title={"Button Text"} value={details.CTAtext} />
 
       </div>
-      <button type="button" className="mt-4 bg-green-800 p-2 rounded text-white font-bold">Done</button>
+      <button type="button" onClick={handleSave} className="mt-4 bg-green-800 p-2 rounded text-white font-bold">Done</button>
       <button type="button" className="p-2 text-blue-700">Download</button>
     </div>
   );

@@ -2,6 +2,7 @@
   "bannerAds": 
 [
   {
+    "id": 101,
     "title": "Easy Growth Solutions",
     "description": "Streamline Your Business Processes",
     "CTAtext": "Upgrade Now",
@@ -9,6 +10,7 @@
     "bannerTemplate": "default"
   },
   {
+    "id": 102,
     "title": "Boost Your Sales",
     "description": "Increase Your Revenue with Our Tools",
     "CTAtext": "Learn More",
@@ -16,6 +18,7 @@
     "bannerTemplate": "template_17"
   },
   {
+    "id": 103,
     "title": "Experience the Future",
     "description": "Discover Innovative Technology",
     "CTAtext": "Explore Now",
@@ -23,6 +26,7 @@
     "bannerTemplate": "template_32"
   },
   {
+    "id": 104,
     "title": "Efficient Management",
     "description": "Optimize Your Operations",
     "CTAtext": "Get Started",
@@ -30,6 +34,7 @@
     "bannerTemplate": "template_25"
   },
   {
+    "id": 105,
     "title": "Innovative Solutions",
     "description": "Revolutionize Your Workflow",
     "CTAtext": "Try Now",
@@ -37,6 +42,7 @@
     "bannerTemplate": "template_18"
   },
   {
+    "id": 106,
     "title": "Smart Business Tools",
     "description": "Enhance Productivity",
     "CTAtext": "Discover More",
@@ -44,6 +50,7 @@
     "bannerTemplate": "template_33"
   },
   {
+    "id": 107,
     "title": "Cutting-edge Technology",
     "description": "Stay Ahead of the Curve",
     "CTAtext": "Learn More",
@@ -51,6 +58,7 @@
     "bannerTemplate": "template_26"
   },
   {
+    "id": 108,
     "title": "Future-proof Your Business",
     "description": "Prepare for Tomorrow",
     "CTAtext": "Upgrade Today",
@@ -58,6 +66,7 @@
     "bannerTemplate": "template_19"
   },
   {
+    "id": 109,
     "title": "Maximize Efficiency",
     "description": "Get More Done",
     "CTAtext": "Explore Now",
@@ -65,6 +74,7 @@
     "bannerTemplate": "template_34"
   },
   {
+    "id": 110,
     "title": "Advanced Analytics",
     "description": "Make Data-Driven Decisions",
     "CTAtext": "Get Insights",
@@ -72,6 +82,7 @@
     "bannerTemplate": "template_27"
   },
   {
+    "id": 111,
     "title": "Seamless Integration",
     "description": "Unify Your Systems",
     "CTAtext": "Connect Now",
@@ -79,6 +90,7 @@
     "bannerTemplate": "template_20"
   },
   {
+    "id": 112,
     "title": "Automate Your Workflow",
     "description": "Save Time and Money",
     "CTAtext": "Start Today",
@@ -86,6 +98,7 @@
     "bannerTemplate": "template_35"
   },
   {
+    "id": 113,
     "title": "Next-gen Solutions",
     "description": "Innovate and Excel",
     "CTAtext": "Discover More",
@@ -93,6 +106,7 @@
     "bannerTemplate": "template_28"
   },
   {
+    "id": 114,
     "title": "Transform Your Business",
     "description": "Achieve New Heights",
     "CTAtext": "Join Now",
@@ -100,6 +114,7 @@
     "bannerTemplate": "template_21"
   },
   {
+    "id": 115,
     "title": "Business Optimization",
     "description": "Streamline Operations",
     "CTAtext": "Get Started",
@@ -107,6 +122,7 @@
     "bannerTemplate": "template_36"
   },
   {
+    "id": 116,
     "title": "Scalable Solutions",
     "description": "Grow with Confidence",
     "CTAtext": "Learn More",
@@ -114,6 +130,7 @@
     "bannerTemplate": "template_29"
   },
   {
+    "id": 117,
     "title": "Empower Your Team",
     "description": "Boost Productivity",
     "CTAtext": "Explore Now",
@@ -121,6 +138,7 @@
     "bannerTemplate": "template_22"
   },
   {
+    "id": 118,
     "title": "Innovate Your Industry",
     "description": "Lead with Technology",
     "CTAtext": "Try Now",
@@ -128,6 +146,7 @@
     "bannerTemplate": "template_37"
   },
   {
+    "id": 119,
     "title": "Future-Ready Tools",
     "description": "Stay Competitive",
     "CTAtext": "Upgrade Now",
@@ -135,6 +154,7 @@
     "bannerTemplate": "template_30"
   },
   {
+    "id": 120,
     "title": "Comprehensive Solutions",
     "description": "All-in-One Tools",
     "CTAtext": "Discover More",
