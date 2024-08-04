@@ -7,7 +7,7 @@
 > Vercel deployment link [Live Web Link](https://grow-easyadsplatform-ranas25s-projects.vercel.app/)
 
 
-### Technologies:
+### Technologies
 [![Next.js](https://img.shields.io/badge/Next.js-blue.svg?style=for-the-badge)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-purple.svg?style=for-the-badge)](https://tailwindcss.com/)
 
@@ -32,22 +32,22 @@
 
 
 ## Project Structure:
-  - `public` (It contains the static files that are served to the user on first request)
+  - `public` It contains the static files that are served to the user on first request
     
-    - `icons` (Icons used across different components)
-    - `images` (Images that can be changed for any template)
-    - `templates` (Templates used for banners)
-  - `src` (all source code for the project is put here)
+    - `icons` Icons used across different components
+    - `images` Images that can be changed for any template
+    - `templates` Templates used for banners
+  - `src` all source code for the project is put here
     
-    - `app` (Files for the "/" route, served by the server)
-    - `components` (Components for the homepage)
-    - `data` (Contains data for banners displayed on the homepage)
-    - `lib` (Contain files for Redux Store).
-      - `feature` (Store Slices are created here)
-        - `BannerSlice`.ts (Manages state variables related to banners)
-      - `hooks` (Contains hooks for selector, dispatch, and Store)
-      - `store`.ts (Store creation and configuration)
-    - `utils` (contains utility data)
+    - `app` Files for the "/" route, served by the server
+    - `components` Components for the homepage
+    - `data` Contains data for banners displayed on the homepage
+    - `lib` Contain files for Redux Store
+      - `feature` Store Slices are created here
+        - `BannerSlice.ts` Manages state variables related to banners
+      - `hooks` Contains hooks for selector, dispatch, and Store
+      - `store`.ts Store creation and configuration
+    - `utils` contains utility data
       
       - `bannerConfig.ts` (Config for all banner templates with special CSS properties)
       - `images.ts` (Array of background images for banner selection)
