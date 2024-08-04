@@ -2,29 +2,14 @@
 
 import React, {  useRef } from 'react'
 import Header from './Header'
-import AdsContainer from './AdsContainer'
+import BannerContainer from './BannerContainer'
 import JSONData from '../data/bannerData.json'
-
-
 import { Provider } from 'react-redux'
 import { makeStore, AppStore } from '../lib/store'
 import { addBanners } from '@/lib/features/BannerSlice'
 
 
-// using bannerSlice
-
-
-import { useAppSelector } from '../lib/hooks'
-import EditBanner from './EditBanner'
-
-
-
-
-
-
-
 const Body: React.FC = () => {
-  // const arr = Array.from(JSONData.bannerAds);
   const storeRef = useRef<AppStore>()
   if (!storeRef.current) {
     
@@ -37,10 +22,9 @@ const Body: React.FC = () => {
 
   return (
     <Provider store={storeRef.current}>
-      <Header />
       
-      <AdsContainer />
-
+      <Header />
+      <BannerContainer />
 
     </Provider>
   )

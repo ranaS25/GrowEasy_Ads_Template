@@ -2,23 +2,21 @@
 
 
 import FormInput from "./FormInput";
-import { useAppDispatch, useAppSelector, useAppStore } from "@/lib/hooks";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { setEditBanner, setEditorOpened, updateBanner } from "@/lib/features/BannerSlice";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { images } from "../utils/Images"
-import AdSquare from "./AdSquare";
+
 import Banner from "./Banner";
 
 const EditBanner = () => {
-
-
   
   const [titleText, setTitleText] = useState<string>("");
   const [descriptionText, setDescriptionText]  = useState<string>("");
   const [CTAtext, setCTAtext] = useState<string>("");
   const [imageSrc, setImageSrc] = useState<string>("");
-  const [template, setTemplate] = useState<string>("");
+  const [template, setTemplate] = useState<"template1" | "template2" | null>(null);
 
   const dispatch = useAppDispatch()
   const details: any = useAppSelector(store => store.banner.editBanner);
@@ -50,7 +48,6 @@ const EditBanner = () => {
     newObject.imageSrc = imageSrc;
 
     dispatch(updateBanner(newObject));
-
     dispatch(setEditorOpened(false))
     dispatch(setEditBanner(null))
 
@@ -80,18 +77,20 @@ const EditBanner = () => {
 
               <Banner key={details.id} details={{ title: titleText, description: descriptionText, CTAtext: CTAtext, imageSrc: imageSrc, bannerTemplate: template }} displayOnly={true} />
           </div>
-          <p className="mt-4 text-xs">Image Attribution: <i>Photo by <span className="underline">Ceyda Çiftci</span> on <span className="underline">Unsplash</span></i></p>
+            <p className="mt-4 text-xs">Licensable Images: <i>Source <span className="underline cursor-pointer" >Google Images</span></i></p>
         </div>
 
         <div className="py-4 text-md">
           <p>Choose Image</p>
-          <div className="flex gap-1 py-4 max-w-full overflow-x-scroll border-b-2">
+            <div className="px-1 flex gap-2 py-4 max-w-full overflow-x-scroll border-b-2">
             
-            {images.map((image, index) => <img
-              key={ index}
-              onClick={handleImageClick}
-              className="w-20 aspect-square cursor-pointer rounded-full border-2 border-black/50 bg-slate-200 object-cover object-center"
-              src={ image} />
+              {images.map((image, index) => {
+                return <img
+                  key={index}
+                  onClick={handleImageClick}
+                  className={"w-20 aspect-square cursor-pointer rounded-full " + (imageSrc !== image ? "border border-black/30" : " outline outline-green-600  shadow-sm") + " bg-slate-200 object-cover object-center"}
+                  src={image} />
+              }
             )}
             
           </div>

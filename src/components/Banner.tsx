@@ -1,10 +1,24 @@
 import { setEditBanner, setEditorOpened } from "@/lib/features/BannerSlice";
 import { useAppDispatch } from "@/lib/hooks";
-import React, { useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { bannerConfig } from "../utils/bannerConfig";
 
-const Banner = (props) => {
+type BannerTemplate = 'template1' | 'template2';
+
+interface BannerProps {
+  details: {
+    title: string;
+    description: string;
+    CTAtext: string;
+    imageSrc: string;
+    bannerTemplate: BannerTemplate;
+  },
+  displayOnly: boolean,
+  toggleEditor: (b: boolean) => void
+}
+
+const Banner: React.FC<BannerProps> = (props) => {
   const { title, description, CTAtext, imageSrc, bannerTemplate } = props.details;
 
 
@@ -18,27 +32,26 @@ const Banner = (props) => {
     dispatch(setEditBanner(props.details));
   };
 
-
   return (
     <div className="bg-white aspect-square relative overflow-clip w-[300px]">
       <img
         src={imageSrc}
         className={" aspect-square object-cover absolute"}
-        style={config.imageStyle}
+        style={config.imageStyle as React.CSSProperties}
       />
       <img
         src={config.backgroundImage}
         className="w-full aspect-square absolute top-0 "
       />
-      <div className="w-full  aspect-square absolute z-10 top-0 text-white bg-black/20 pl-[5%] pt-[5%]">
-        <p style={config.titleStyle}>{title}</p>
-        <p style={config.descriptionStyle}>{description}</p>
-        <button style={config.ctaStyle}>{CTAtext}</button>
+      <div className="w-full  aspect-square absolute z-10 top-0 text-white bg-black/15 pl-[5%] pt-[5%]">
+        <p style={config.titleStyle as React.CSSProperties}>{title}</p>
+        <p style={config.descriptionStyle as React.CSSProperties}>{description}</p>
+        <button style={config.ctaStyle as React.CSSProperties}>{CTAtext}</button>
       </div>
       {!displayOnly && (
         <img
           src={"/icons/icon_edit.png"}
-          className="w-8 aspect-square absolute z-20 right-0 bg-black/20"
+          className="w-8 p-1 aspect-square absolute z-20 right-1 top-1 bg-black/15 rounded cursor-pointer"
           onClick={handleEditClick}
         />
       )}
@@ -46,9 +59,9 @@ const Banner = (props) => {
   );
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch: any) => {
   return {
-    toggleEditor: (b) => dispatch(setEditorOpened(b)),
+    toggleEditor: (b: boolean) => dispatch(setEditorOpened(b)),
   };
 };
 

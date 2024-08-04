@@ -1,7 +1,6 @@
 import React  from 'react'
 
-export default function FormInput({ title, text, changeText }: { title: string, text: string, changeText: (s: string)=>void }) {
-
+const FormInput = ({ title, text, changeText }: { title: string, text: string, changeText: (s: string)=>void }) =>{
 
   return (
     <div className="mt-5 ">
@@ -10,3 +9,6 @@ export default function FormInput({ title, text, changeText }: { title: string, 
     </div>
   )
 }
+
+
+export default FormInput

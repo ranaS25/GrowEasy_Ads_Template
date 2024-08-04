@@ -3,12 +3,12 @@ export const bannerConfig = {
     titleStyle: {
       width: "38%",
       fontWeight: "bold",
-      fontSize: "1.125rem", // text-lg
-      whiteSpace: "pre-wrap", // text-wrap
+      fontSize: "1.125rem", 
+      whiteSpace: "pre-wrap", 
     },
     descriptionStyle: {
       width: "38%",
-      fontSize: "0.875rem", // text-sm
+      fontSize: "0.875rem", 
       position: "absolute",
       top: "50%",
     },
@@ -16,14 +16,13 @@ export const bannerConfig = {
       position: "absolute",
       bottom: "20%",
       transform: "translateX(50%) translateY(100%)",
-      whiteSpace: "pre-wrap", // text-wrap
-      maxWidth: "40%",
-      borderRadius: "0.25rem", // rounded
+      maxWidth:"55%",
+      borderRadius: "0.25rem", 
       right: "30%",
-      fontSize: "0.875rem", // text-sm
-      padding: "0.5rem", // p-2
+      fontSize: "0.875rem", 
+      padding: "0.5rem", 
       backgroundColor: "white",
-      color: "#1e40af", // text-blue-800
+      color: "#1e40af", 
       fontWeight: "bold",
     },
     imageStyle: {
@@ -54,6 +53,7 @@ export const bannerConfig = {
     ctaStyle: {
       position: "absolute",
       bottom: "8%",
+      maxWidth: "45%",
       backgroundColor: "rgba(0, 0, 0, 0.8)", // bg-black/80
       padding: "0.5rem", // p-2
       borderRadius: "0.25rem", // rounded
