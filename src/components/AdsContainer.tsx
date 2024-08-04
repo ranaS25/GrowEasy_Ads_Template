@@ -2,6 +2,7 @@ import React from 'react'
 import AdSquare from './AdSquare'
 import {  useAppSelector } from '@/lib/hooks'
 import EditBanner from './EditBanner'
+import Banner from './Banner'
 
 
 
@@ -15,11 +16,14 @@ const AdsContainer: React.FC = () => {
 
   return (
     <>
+      <div className="w-full h-[100dvh] -z-10 fixed top-0 bg-gradient-to-bl from-sky-500 to-blue-500 "></div>
 
 
       {editorOpened && <EditBanner />}
-    <div className='w-[80%] min-h-96  grid grid-cols-2 gap-2 pt-10'>
-        {list1.map((item, index) => <AdSquare key={index} details={item} displayOnly={false}/>)}
+      <div className='w-fit  pt-10 min-h-96  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4'>
+        {/* {list1.map((item, index) => <AdSquare key={index} details={item} displayOnly={false} />)} */}
+        
+        {list1.map((item, index) => <Banner key={index} details={item} displayOnly={false} />)}
 
       </div>
     </>

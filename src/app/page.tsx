@@ -9,7 +9,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start bg-green-700">
+    <main className="flex min-h-screen flex-col items-center justify-start ">
 
       {/* {editFormOpen && <EditBanner setEditFormOpen={setEditFormOpen} />} */}
 

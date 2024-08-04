@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { images } from "../utils/Images"
 import AdSquare from "./AdSquare";
+import Banner from "./Banner";
 
 const EditBanner = () => {
 
@@ -17,9 +18,11 @@ const EditBanner = () => {
   const [descriptionText, setDescriptionText]  = useState<string>("");
   const [CTAtext, setCTAtext] = useState<string>("");
   const [imageSrc, setImageSrc] = useState<string>("");
+  const [template, setTemplate] = useState<string>("");
 
   const dispatch = useAppDispatch()
-  const details: any = useAppSelector(store => store.banner.editBanner)
+  const details: any = useAppSelector(store => store.banner.editBanner);
+
 
   useEffect(() => { 
 
@@ -27,6 +30,7 @@ const EditBanner = () => {
     setDescriptionText(details.description);
     setCTAtext(details.CTAtext); 
     setImageSrc(details.imageSrc);
+    setTemplate(details.bannerTemplate);
 
     
 
@@ -43,7 +47,7 @@ const EditBanner = () => {
     newObject.title = titleText;
     newObject.description = descriptionText;
     newObject.CTAtext = CTAtext;
-    newObject.imageSrc = imageSrc
+    newObject.imageSrc = imageSrc;
 
     dispatch(updateBanner(newObject));
 
@@ -56,10 +60,15 @@ const EditBanner = () => {
     setImageSrc(e.target.src.replace(/^https?:\/\/[^\/]+/, ''));   
   }
 
-  return (
+  if (!template) { return null }
 
-    <div
-      className="fixed z-30 min-w-52 w-[95dvw] m-6 box-border top-12 flex items-stretch min-h-80  h-5/6 max-w-96 flex-col px-4 py-4  justify-start bg-white rounded-xl">
+
+  return (
+    <>
+      <div className="fixed w-full h-full  pointer-events-auto z-[30]"></div>
+
+      <div
+        className=" fixed z-40 min-w-52 w-[95dvw] m-6 box-border top-12 flex items-stretch min-h-80  h-5/6 max-w-96 flex-col px-4 py-4  justify-start bg-white rounded-xl">
       <div className="flex pb-2 justify-between w-full text-base items-center">
         <span>Edit Banner</span>
         <span onClick={handleClose}
@@ -67,8 +76,9 @@ const EditBanner = () => {
       </div>
       <div className="flex flex-col items-stretch overflow-y-auto no-scrollbar">
         <div className="pt-2">
-          <div className="px-12">
-            <AdSquare details={{ title: titleText, description: descriptionText, CTAtext: CTAtext, imageSrc: imageSrc }} displayOnly = {true}/>
+            <div className="flex justify-center">
+
+              <Banner key={details.id} details={{ title: titleText, description: descriptionText, CTAtext: CTAtext, imageSrc: imageSrc, bannerTemplate: template }} displayOnly={true} />
           </div>
           <p className="mt-4 text-xs">Image Attribution: <i>Photo by <span className="underline">Ceyda Çiftci</span> on <span className="underline">Unsplash</span></i></p>
         </div>
@@ -96,7 +106,9 @@ const EditBanner = () => {
       </div>
       <button type="button" onClick={handleSave} className="mt-4 bg-green-800 p-2 rounded text-white font-bold">Done</button>
       <button type="button" className="p-2 text-blue-700">Download</button>
-    </div>
+      </div>
+
+    </>
   );
 }
 

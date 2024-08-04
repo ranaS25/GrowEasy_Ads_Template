@@ -7,7 +7,7 @@
     "description": "Streamline Your Business Processes",
     "CTAtext": "Upgrade Now",
     "imageSrc": "/images/image1.png",
-    "bannerTemplate": "default"
+    "bannerTemplate": "template2"
   },
   {
     "id": 102,
@@ -15,7 +15,7 @@
     "description": "Increase Your Revenue with Our Tools",
     "CTAtext": "Learn More",
     "imageSrc": "/images/image2.png",
-    "bannerTemplate": "template_17"
+    "bannerTemplate": "template2"
   },
   {
     "id": 103,
@@ -23,7 +23,7 @@
     "description": "Discover Innovative Technology",
     "CTAtext": "Explore Now",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_32"
+    "bannerTemplate": "template2"
   },
   {
     "id": 104,
@@ -31,7 +31,7 @@
     "description": "Optimize Your Operations",
     "CTAtext": "Get Started",
     "imageSrc": "/images/image4.png",
-    "bannerTemplate": "template_25"
+    "bannerTemplate": "template2"
   },
   {
     "id": 105,
@@ -39,7 +39,7 @@
     "description": "Revolutionize Your Workflow",
     "CTAtext": "Try Now",
     "imageSrc": "/images/image5.png",
-    "bannerTemplate": "template_18"
+    "bannerTemplate": "template1"
   },
   {
     "id": 106,
@@ -47,7 +47,7 @@
     "description": "Enhance Productivity",
     "CTAtext": "Discover More",
     "imageSrc": "/images/image6.png",
-    "bannerTemplate": "template_33"
+    "bannerTemplate": "template1"
   },
   {
     "id": 107,
@@ -55,7 +55,7 @@
     "description": "Stay Ahead of the Curve",
     "CTAtext": "Learn More",
     "imageSrc": "/images/image2.png",
-    "bannerTemplate": "template_26"
+    "bannerTemplate": "template1"
   },
   {
     "id": 108,
@@ -63,7 +63,7 @@
     "description": "Prepare for Tomorrow",
     "CTAtext": "Upgrade Today",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_19"
+    "bannerTemplate": "template1"
   },
   {
     "id": 109,
@@ -71,7 +71,7 @@
     "description": "Get More Done",
     "CTAtext": "Explore Now",
     "imageSrc": "/images/image1.png",
-    "bannerTemplate": "template_34"
+    "bannerTemplate": "template1"
   },
   {
     "id": 110,
@@ -79,7 +79,7 @@
     "description": "Make Data-Driven Decisions",
     "CTAtext": "Get Insights",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_27"
+    "bannerTemplate": "template1"
   },
   {
     "id": 111,
@@ -87,7 +87,7 @@
     "description": "Unify Your Systems",
     "CTAtext": "Connect Now",
     "imageSrc": "/images/image5.png",
-    "bannerTemplate": "template_20"
+    "bannerTemplate": "template1"
   },
   {
     "id": 112,
@@ -95,7 +95,7 @@
     "description": "Save Time and Money",
     "CTAtext": "Start Today",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_35"
+    "bannerTemplate": "template1"
   },
   {
     "id": 113,
@@ -103,7 +103,7 @@
     "description": "Innovate and Excel",
     "CTAtext": "Discover More",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_28"
+    "bannerTemplate": "template1"
   },
   {
     "id": 114,
@@ -111,7 +111,7 @@
     "description": "Achieve New Heights",
     "CTAtext": "Join Now",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_21"
+    "bannerTemplate": "template1"
   },
   {
     "id": 115,
@@ -119,7 +119,7 @@
     "description": "Streamline Operations",
     "CTAtext": "Get Started",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_36"
+    "bannerTemplate": "template1"
   },
   {
     "id": 116,
@@ -127,7 +127,7 @@
     "description": "Grow with Confidence",
     "CTAtext": "Learn More",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_29"
+    "bannerTemplate": "template1"
   },
   {
     "id": 117,
@@ -135,7 +135,7 @@
     "description": "Boost Productivity",
     "CTAtext": "Explore Now",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_22"
+    "bannerTemplate": "template1"
   },
   {
     "id": 118,
@@ -143,7 +143,7 @@
     "description": "Lead with Technology",
     "CTAtext": "Try Now",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_37"
+    "bannerTemplate": "template1"
   },
   {
     "id": 119,
@@ -151,7 +151,7 @@
     "description": "Stay Competitive",
     "CTAtext": "Upgrade Now",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_30"
+    "bannerTemplate": "template1"
   },
   {
     "id": 120,
@@ -159,7 +159,7 @@
     "description": "All-in-One Tools",
     "CTAtext": "Discover More",
     "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template_23"
+    "bannerTemplate": "template1"
   }
 ]
 

@@ -32,6 +32,7 @@ const bannerSlice = createSlice({
         originalBanner.description = action.payload.description;
         originalBanner.CTAtext = action.payload.CTAtext;
         originalBanner.imageSrc = action.payload.imageSrc;
+        originalBanner.bannerTemplate = action.payload.bannerTemplate;
       }
 
     }

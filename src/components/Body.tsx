@@ -27,8 +27,9 @@ const Body: React.FC = () => {
   // const arr = Array.from(JSONData.bannerAds);
   const storeRef = useRef<AppStore>()
   if (!storeRef.current) {
+    
     // Create the store instance the first time this renders
-    console.log("ref created...")
+ 
     storeRef.current = makeStore();
     storeRef.current.dispatch(addBanners(JSONData.bannerAds))
   }
