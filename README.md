@@ -43,6 +43,7 @@
     - `components` Components for the homepage
     - `data` Contains data for banners displayed on the homepage
     - `lib` Contain files for Redux Store
+      
       - `feature` Store Slices are created here
         - `BannerSlice.ts` Manages state variables related to banners
       - `hooks` Contains hooks for selector, dispatch, and Store
