@@ -27,7 +27,6 @@
 
 >Live Preview while editing Banner   _"This is helpful for creating banner without affecting the template design"_
 
->$\color{#58A6FF}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Note}$ _"All edits will be revert back to the default state once the page is refreshed"_
 
 
 
