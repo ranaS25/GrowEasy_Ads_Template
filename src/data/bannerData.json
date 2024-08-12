@@ -46,7 +46,7 @@
     "title": "Smart Business Tools",
     "description": "Enhance Productivity",
     "CTAtext": "Discover More",
-    "imageSrc": "/images/image6.png",
+    "imageSrc": "/images/image4.png",
     "bannerTemplate": "template1"
   },
   {
@@ -128,39 +128,8 @@
     "CTAtext": "Learn More",
     "imageSrc": "/images/image5.png",
     "bannerTemplate": "template1"
-  },
-  {
-    "id": 117,
-    "title": "Empower Your Team",
-    "description": "Boost Productivity",
-    "CTAtext": "Explore Now",
-    "imageSrc": "/images/image3.png",
-    "bannerTemplate": "template2"
-  },
-  {
-    "id": 118,
-    "title": "Innovate Your Industry",
-    "description": "Lead with Technology",
-    "CTAtext": "Try Now",
-    "imageSrc": "/images/image2.png",
-    "bannerTemplate": "template1"
-  },
-  {
-    "id": 119,
-    "title": "Future-Ready Tools",
-    "description": "Stay Competitive",
-    "CTAtext": "Upgrade Now",
-    "imageSrc": "/images/image6.png",
-    "bannerTemplate": "template2"
-  },
-  {
-    "id": 120,
-    "title": "Comprehensive Solutions",
-    "description": "All-in-One Tools",
-    "CTAtext": "Discover More",
-    "imageSrc": "/images/image1.png",
-    "bannerTemplate": "template1"
   }
+  
 ]
 
 }
